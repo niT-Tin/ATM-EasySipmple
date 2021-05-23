@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<BorderPane fx:id="registerBrdpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="600.0" styleClass="BasePane" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegisterController">
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="textID" prefHeight="30.0" prefWidth="98.0" text="         账号" />
+                  <Label fx:id="textPD" prefHeight="30.0" prefWidth="98.0" text="         密码" />
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="258.0" styleClass="sheetField">
+               <children>
+                  <TextField fx:id="rTextField" prefHeight="30.0" prefWidth="258.0" styleClass="RtextField" />
+                  <PasswordField fx:id="rPwdField" prefHeight="33.0" prefWidth="258.0" styleClass="RPwdfield" />
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="219.0" styleClass="buttonField">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="register" layoutX="14.0" mnemonicParsing="false" onAction="#Register" prefHeight="64.0" prefWidth="64.0" text="注册" />
+                        <Button fx:id="toLogin" layoutX="98.0" layoutY="1.0" mnemonicParsing="false" onAction="#toLogin" prefHeight="62.0" prefWidth="62.0" text="登录" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <ImageView id="testID" fitHeight="380" fitWidth="528.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <Image fx:id="loginImg1" url="/images/pic.png"/>
+      </ImageView>
+   </center>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <stylesheets>
+      <URL value="@/css/main.css"/>
+   </stylesheets>
+</BorderPane>

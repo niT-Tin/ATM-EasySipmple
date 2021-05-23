@@ -1,0 +1,37 @@
+#depositE:hover, #withdrawE:hover, #transferE:hover,
+#queryE:hover, #loginin:hover, #logoutout:hover,
+#register:hover, #toLogin:hover{
+    -fx-background-color: rgba(78,110,242, 1);
+    -fx-effect: dropshadow(three-pass-box, #72b9da, 10.0,0, 7, 7);
+    -fx-border-radius: 30px;
+    -fx-font-size: 14px;
+}
+
+#textID, #textPD, #labelAccount, #labelPassword{
+    /*-fx-text-fill: rgba(78,110,242, 1);*/
+    -fx-font-size: 15px;
+}
+
+#testID1, #testID{
+    width: 80%;
+    background-color: white;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    -fx-effect: dropshadow(three-pass-box, rgba(43,43,43, 0.5), 10.0,0, 7, 7);
+}
+
+#loginImg, #loginImg1{
+    width: 100%;
+}
+
+#rTextField, #rPwdField, #passwdField, #accountField{
+    -fx-background-color: #ffffff00;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: rgba(43,43,43, 1);
+}
+
+#registerBrdpane {
+    width: 80%;
+    background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(43,43,43, 0.5), 10.0,0, 7, 7);
+}
+
